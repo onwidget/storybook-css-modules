@@ -1,0 +1,63 @@
+{
+  "name": "storybook-css-modules",
+  "version": "1.0.0",
+  "description": "Storybook CSS Modules preset",
+  "author": "prototypearea",
+  "license": "MIT",
+  "keywords": [
+    "storybook-addons",
+    "style",
+    "code",
+    "css-modules",
+    "css",
+    "preset",
+    "storybook",
+    "addon"
+  ],
+  "homepage": "https://github.com/prototypearea/storybook-css-modules",
+  "bugs": {
+    "url": "https://github.com/prototypearea/storybook-css-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prototypearea/storybook-css-modules.git"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && babel ./src --ignore '**/*.test.js' --out-dir ./dist",
+    "watch": "npm run clean && babel --watch ./src --ignore '**/*.test.js' --out-dir ./dist",
+    "clean": "rm -rf dist",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -c ./examples/react/.storybook",
+    "build-storybook": "build-storybook -c ./examples/react/.storybook"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@storybook/react": "^6.4.22",
+    "babel-loader": "^8.2.5",
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "peerDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "storybook": {
+    "displayName": "Storybook CSS Modules",
+    "unsupportedFrameworks": [],
+    "supportedFrameworks": [
+      "react"
+    ],
+    "icon": "https://raw.githubusercontent.com/prototypearea/storybook-css-modules/main/css-modules-logo.png"
+  }
+}
