@@ -42,7 +42,7 @@ By default this preset configured _CSS Modules_ with this options:
 }
 ```
 
-If you need specific different options, override this in `.storybook/main.js`, example:
+If you need specific different options, override this in `.storybook/main.js` using _cssModulesLoaderOptions_, example:
 
 ```js
 // .storybook/main.js
