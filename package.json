@@ -1,6 +1,6 @@
 {
   "name": "storybook-css-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Storybook CSS Modules preset",
   "author": "prototypearea",
   "license": "MIT",
@@ -12,7 +12,8 @@
     "css",
     "preset",
     "storybook",
-    "addon"
+    "addon",
+    "css modules"
   ],
   "homepage": "https://github.com/prototypearea/storybook-css-modules",
   "bugs": {
