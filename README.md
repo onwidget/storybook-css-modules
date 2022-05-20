@@ -1,6 +1,6 @@
 # Storybook CSS Modules preset &middot; [![npm package](https://img.shields.io/npm/v/storybook-css-modules?color=green&label=npm&style=flat-square)](https://www.npmjs.com/package/storybook-css-modules)
 
-Storybook preset addon to add _CSS Modules_ capabilities
+Storybook preset addon to add _CSS Modules_ capabilities.
 
 <br />
 
@@ -12,7 +12,7 @@ npm install -D storybook-css-modules
 
 <br />
 
-## Basic usage
+## Configuration
 
 Next, update `.storybook/main.js` to the following:
 
@@ -70,4 +70,51 @@ module.exports = {
     },
   ],
 };
+```
+
+<br />
+
+## Usage
+
+This Storybook addon automatically imports all ".modules.css" files as CSS Modules using the specified options.
+
+<br />
+
+```js
+// Button.stories.jsx
+
+import React from "react";
+import Button from "./Button.jsx"
+import styles from "./Button.modules.css"
+
+export default {
+  title: "Button",
+  component: Button,
+};
+
+const Template = (args) => <Button {...args}>Button</Button>
+
+export const Default = (args) => <Template {...args} />;
+
+// Story using CSS Modules
+export const WithCSSModules = () => (
+  <Template 
+    {...args}
+    className={styles.Button}  // 👈 
+  />
+);
+
+```
+
+
+```css
+/* Button.module.css */
+
+.Button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  height: 36px;
+  padding: 5px 10px;
+}
 ```
