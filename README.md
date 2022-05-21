@@ -118,3 +118,11 @@ export const WithCSSModules = () => (
   padding: 5px 10px;
 }
 ```
+
+<br />
+
+## Examples
+
+- [React](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/react)
+- [Preact](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/preact)
+- [Vue 3](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/vue3)
