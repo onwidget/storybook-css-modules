@@ -1,15 +1,23 @@
 const defaultOptions = {
-  importLoaders: 1,
-  modules: {
-    localIdentName: "[path][name]__[local]--[hash:base64:5]",
+  default: {
+    importLoaders: 1,
+    modules: {
+      localIdentName: "[path][name]__[local]--[hash:base64:5]",
+    },
   },
+  vue3: {
+    modules: {
+      localIdentName: "[path][name]__[local]--[hash:base64:5]",
+    },
+  }
 }
 
 export async function webpackFinal(config = {}, options = {}) {
   const { module = {} } = config;
+  const { framework } = options;
 
   const {
-    cssModulesLoaderOptions = defaultOptions,
+    cssModulesLoaderOptions = defaultOptions[framework] || defaultOptions.default,
   } = options;
 
   const newConfig = {
@@ -24,11 +32,9 @@ export async function webpackFinal(config = {}, options = {}) {
     (rule) => rule?.test?.toString() === "/\\.css$/"
   );
 
-  if (cssLoaderRule) {
-    newConfig.module.rules.push({
-      ...cssLoaderRule,
-      test: /\.module\.css$/,
-      use: cssLoaderRule.use.map((item) => {
+  switch (framework) {
+    case "vue3":
+      cssLoaderRule.use = cssLoaderRule.use.map((item) => {
         if (item?.loader?.match(/[\/\\]css-loader/g)) {
           return {
             ...item,
@@ -39,10 +45,32 @@ export async function webpackFinal(config = {}, options = {}) {
           };
         }
         return item;
-      }),
-    });
+      })
 
-    cssLoaderRule.exclude = /\.module\.css$/;
+      break;
+  
+    default:
+      if (cssLoaderRule) {
+        newConfig.module.rules.push({
+          ...cssLoaderRule,
+          test: /\.module\.css$/,
+          use: cssLoaderRule.use.map((item) => {
+            if (item?.loader?.match(/[\/\\]css-loader/g)) {
+              return {
+                ...item,
+                options: {
+                  ...item.options,
+                  ...cssModulesLoaderOptions,
+                },
+              };
+            }
+            return item;
+          }),
+        });
+    
+        cssLoaderRule.exclude = /\.module\.css$/;
+      }
+      break;
   }
 
   return newConfig;
