@@ -22,5 +22,5 @@ module.exports = {
     //   },
     // },
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/preact"
 }

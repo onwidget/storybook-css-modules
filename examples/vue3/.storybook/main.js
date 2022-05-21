@@ -14,7 +14,6 @@ module.exports = {
     //   name: "storybook-css-modules",
     //   options: {
     //     cssModulesLoaderOptions: {
-    //       importLoaders: 1,
     //       modules: {
     //         localIdentName: "[hash:base64:5]",
     //       },
@@ -22,5 +21,5 @@ module.exports = {
     //   },
     // },
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/vue3"
 }
