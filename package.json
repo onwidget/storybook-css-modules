@@ -1,6 +1,6 @@
 {
   "name": "storybook-css-modules",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Storybook CSS Modules preset",
   "author": "prototypearea",
   "license": "MIT",
@@ -58,7 +58,9 @@
     "displayName": "Storybook CSS Modules",
     "unsupportedFrameworks": [],
     "supportedFrameworks": [
-      "react"
+      "react",
+      "preact",
+      "vue3"
     ],
     "icon": "https://raw.githubusercontent.com/prototypearea/storybook-css-modules/main/logo-css-modules.png"
   }
