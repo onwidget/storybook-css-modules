@@ -59,6 +59,6 @@
     "supportedFrameworks": [
       "react"
     ],
-    "icon": "https://raw.githubusercontent.com/prototypearea/storybook-css-modules/main/logo.png"
+    "icon": "https://raw.githubusercontent.com/prototypearea/storybook-css-modules/main/logo-css-modules.png"
   }
 }
