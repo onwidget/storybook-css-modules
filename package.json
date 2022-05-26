@@ -1,8 +1,12 @@
 {
   "name": "storybook-css-modules",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Storybook CSS Modules preset",
-  "author": "prototypearea",
+  "author": {
+    "name": "onWidget",
+    "email": "contact@onwidget.com",
+    "url": "https://github.com/onwidget"
+  },
   "license": "MIT",
   "keywords": [
     "storybook-addons",
@@ -16,13 +20,13 @@
     "cssmodules",
     "modules"
   ],
-  "homepage": "https://github.com/prototypearea/storybook-css-modules",
+  "homepage": "https://github.com/onwidget/storybook-css-modules",
   "bugs": {
-    "url": "https://github.com/prototypearea/storybook-css-modules/issues"
+    "url": "https://github.com/onwidget/storybook-css-modules/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/prototypearea/storybook-css-modules.git"
+    "url": "https://github.com/onwidget/storybook-css-modules.git"
   },
   "files": [
     "dist/**/*",
@@ -62,6 +66,6 @@
       "preact",
       "vue"
     ],
-    "icon": "https://raw.githubusercontent.com/prototypearea/storybook-css-modules/main/logo-css-modules.png"
+    "icon": "https://raw.githubusercontent.com/onwidget/storybook-css-modules/main/logo-css-modules.png"
   }
 }
