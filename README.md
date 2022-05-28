@@ -76,7 +76,9 @@ module.exports = {
 
 ## Usage
 
-This Storybook addon automatically imports all ".modules.css" files as CSS Modules using the specified options.
+This Storybook addon automatically imports all ".modules.css" files as CSS Modules using the specified options. 
+
+(Code for ReactJs, find your framework in [#examples](examples))
 
 <br />
 
@@ -123,6 +125,6 @@ export const WithCSSModules = () => (
 
 ## Examples
 
-- [React](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/react)
-- [Preact](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/preact)
-- [Vue 3](https://github.com/prototypearea/storybook-css-modules/tree/main/examples/vue3)
+- [React](https://github.com/onwidget/storybook-css-modules/tree/main/examples/react)
+- [Preact](https://github.com/onwidget/storybook-css-modules/tree/main/examples/preact)
+- [Vue 3](https://github.com/onwidget/storybook-css-modules/tree/main/examples/vue3)
