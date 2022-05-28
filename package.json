@@ -20,7 +20,7 @@
     "cssmodules",
     "modules"
   ],
-  "homepage": "https://github.com/onwidget/storybook-css-modules",
+  "homepage": "https://storybook.js.org/addons/storybook-css-modules",
   "bugs": {
     "url": "https://github.com/onwidget/storybook-css-modules/issues"
   },
