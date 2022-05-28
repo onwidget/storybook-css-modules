@@ -78,7 +78,7 @@ module.exports = {
 
 This Storybook addon automatically imports all ".modules.css" files as CSS Modules using the specified options. 
 
-(Code for ReactJs, find your framework in [#examples](examples))
+(Code for ReactJs, find your framework in [examples](#examples))
 
 <br />
 
