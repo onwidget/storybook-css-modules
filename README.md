@@ -76,7 +76,7 @@ module.exports = {
 
 ## Usage
 
-This Storybook addon automatically imports all ".modules.css" files as CSS Modules using the specified options. 
+This Storybook addon automatically imports all *.modules.css* files as CSS Modules using the specified options. 
 
 (Code for ReactJs, find your framework in [examples](#examples))
 
@@ -128,3 +128,19 @@ export const WithCSSModules = () => (
 - [React](https://github.com/onwidget/storybook-css-modules/tree/main/examples/react)
 - [Preact](https://github.com/onwidget/storybook-css-modules/tree/main/examples/preact)
 - [Vue 3](https://github.com/onwidget/storybook-css-modules/tree/main/examples/vue3)
+
+<br />
+
+## Contributing
+
+Storybook CSS Modules preset is an open-source project. We are committed to a fully transparent development process and appreciate highly any contributions. Whether you are helping us fix bugs, proposing new features, improving our documentation or spreading the word - we would love to have you as part of the community.
+
+Please refer to our [Contribution Guidelines](https://github.com/onwidget/storybook-css-modules/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/onwidget/storybook-css-modules/blob/main/CODE_OF_CONDUCT.md).
+
+## License
+
+Storybook CSS Modules preset is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/storybook-css-modules/blob/main/LICENSE) file for details.
+
+## Acknowledgements
+
+Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/storybook-css-modules/graphs/contributors).
